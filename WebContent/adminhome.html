@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AdminHome</title>
+<style>
+#header {
+      background-color:#006C6C;
+      color:white;
+      text-align:center;
+      padding:5px;
+      margin-top: 1px;
+      margin-left:1px;
+      margin-right:1px;
+      border-radius: 20px;
+  }
+.hero-image {
+  background-image: url("pic4.svg");
+ height: 500px;
+ width: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-radius: 15px;
+  margin-left:700px;
+  margin-top:-50px;
+  margin-bottom:-102px;
+}
+#mydiv {
+		    
+	 	background-color: rgba(0,0,0,0);*/ /* Black w/opacity/see-through */
+	  	color: white;
+	  	font-weight: bold;
+	  	border: 3px solid :#f1f1f1;
+	  	position: absolute;
+	  	top: 50%;
+	  	left: 50%;
+	  	transform: translate(-100%, -25%); /*to center box*/
+	  	z-index: 2;
+	  	width: 40%;
+	  	padding: 30px;
+	  	text-align: center;
+		}
+	.button {
+	  background-color:#006C6C; /* Green */
+	  border: none;
+	  color: white;
+	  padding: 16px 32px;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  font-size: 16px;
+	  margin: 4px 2px;
+	  -webkit-transition-duration: 0.4s; /* Safari */
+	  transition-duration: 0.4s;
+	  cursor: pointer;
+}
+.button4 {
+  background-color:#006C6C;
+  color: white;
+  border: 2px solid #e7e7e7;
+}
+.button4:hover {
+	background-color:red;
+}
+a {
+   text-decoration:none;
+}
+.button5 {
+  background-color:#006C6C;
+  color: white;
+  border: 2px solid #e7e7e7;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.button5:hover {
+	background-color:red;
+}
+</style>
+</head>
+
+<body style="background-color: #f1f1f1" >
+<div id="header">
+		<h1>CAR RENTAL MANAGEMENT SYSTEM</h1>
+</div>
+<center>
+<div>
+	<h1 style="color: black"><strong>Welcome Home, Admin !</strong></h1>		
+</div>
+</center>
+<div class="hero-image"> 
+</div>	
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div id="mydiv">
+		<form method="post" action="Adminrequest">
+			<input type="submit" class="button button4" style="vertical-align:middle" name="submit" value="View Requests">
+		</form>
+		<br>
+		<br>
+		<button class="button button5"> <a href="index.html" style="color: white"> Logout </a></button>
+	</div>	
+</body>
+</html>

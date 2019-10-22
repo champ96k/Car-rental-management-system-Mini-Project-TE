@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>LenderHome</title>
+<style>
+#header {
+    background-color:#006C6C;
+    color:white;
+    text-align:center;
+    padding:5px;
+	margin-top: -10px;
+	margin-left: -10px;
+	margin-right: -10px;
+}
+
+a{
+	text-decoration: none;
+	color: #fff;
+}
+.hero-image {
+  background-image: url("pic3.jpg");
+  height: 610px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+</style>
+</head>
+<body>
+	<div id="header">
+		<h1>CAR RENTAL MANAGEMENT SYSTEM</h1>
+	</div>
+	<div class="hero-image"> 
+		<div>
+			<ul >
+				<center>
+					
+						<li style="margin-left: 467px";><a href="addcar.html">ADD A CAR</a></li>
+
+					  	<li><a href="deletecar.html">DELETE A CAR</a></li>
+
+					  	<li><a href="index.html">LOGOUT</a></li>
+
+					  	<br>
+					  	<br>
+				</center>
+			</ul>
+			<center>
+				<form style="margin-left: 10px;"  method="post" action="Viewcar">
+						<input style="padding: 3px"; type="submit" name="viewcarsubmit" value="View your 'CARS'">
+				</form>
+				<h1 style="color: white">Welcome Home, Owner !</h1>
+			</center>
+		</div>
+	</div>
+</body>
+</html>

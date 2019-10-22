@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>RentYourCar</title>
+<style>
+		#header {
+	      background-color:#006C6C;
+	      color:white;
+	      text-align:center;
+	      padding:5px;
+	      margin-top: 1px;
+	      margin-left:1px;
+	      margin-right:1px;
+	      border-radius: 20px;
+	  	}
+		.mytext {
+		    width: 300px;
+		}
+		#mydiv {
+          position:absolute;
+          top: 50%;
+          left: 50%;
+          width:30em;
+          height:25em;
+          margin-top: -13em; /*set to a negative number 1/2 of your height*/
+          margin-left: -50em; /*set to a negative number 1/2 of your width*/
+          border: 3px solid #ccc;
+          background-color: #f3f3f3;
+         /* border-color:blue;*/
+          border-radius: 15px;
+          border-right: 5px solid #006C6C;
+          border-bottom: 5px solid #006C6C;
+          border-left: 2px solid #006C6C;
+          border-top: 2px solid #006C6C;
+      }
+
+      .hero-image {
+		  background-image: url("pic12.svg");
+		  height: 500px;
+		  background-position: center;
+		  background-repeat: no-repeat;
+		  position: relative;
+		  border-radius: 15px;
+		  margin-left: 500px;
+		}	
+		.button {
+		  background-color:#006C6C; /* Green */
+		  border: none;
+		  color: white;
+		  padding: 16px 32px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 16px;
+		  margin: 4px 2px;
+		  -webkit-transition-duration: 0.4s; /* Safari */
+		  transition-duration: 0.4s;
+		  cursor: pointer;
+	}
+	.button4 {
+	  background-color:#006C6C;
+	  color: white;
+	  border: 2px solid #e7e7e7;
+	}
+	.button4:hover {
+		background-color:red;
+	}
+	a {
+	   text-decoration:none;
+	}
+</style>
+</head>
+
+<body>
+	<div id="header">
+		<h1>CAR RENTAL MANAGEMENT SYSTEM</h1>
+	</div>
+
+<div class="hero-image"> 
+<center>
+	<div id="mydiv">
+		<form method="get" action="New_admin">
+			<b>
+				<br>
+				<br>
+				<br>
+				<h1>Please Login</h1>
+				<br>
+				<h3>
+					Username : 	<input type="text" name="username"  placeholder=" Username" ><br><br>
+					Password : 	<input type="password" name="password"  placeholder=" Password">
+					<br>
+					<br>
+					<br>
+						&nbsp &nbsp <input class="button button4" type="reset">
+						&nbsp &nbsp &nbsp &nbsp<input class="button button4" type="submit" name="login" value="Login"><br><br>
+				</h3>
+			</b>
+		</form>
+	</div>
+</center>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>GetCar</title>
+<style>
+		#header {
+		      background-color:#006C6C;
+		      color:white;
+		      text-align:center;
+		      padding:5px;
+		      margin-top: 1px;
+		      margin-right:1px;
+		      border-radius: 20px;
+		  	}
+		.mytext {
+	   	 width: 300px;
+		}
+
+		#mydiv {
+          position:absolute;
+          top: 50%;
+          left: 50%;
+          width:30em;
+          height:31em;
+          margin-top: -16em; /*set to a negative number 1/2 of your height*/
+          margin-left: -50em; /*set to a negative number 1/2 of your width*/
+          border: 3px solid #ccc;
+          background-color: #f3f3f3;
+         /* border-color:blue;*/
+          border-radius: 15px;
+          border-right: 5px solid #006C6C;
+          border-bottom: 5px solid #006C6C;
+          border-left: 2px solid #006C6C;
+          border-top: 2px solid #006C6C;
+	      }
+
+      	  .hero-image {
+		  background-image: url("pic11.svg");
+		  height:580px;
+		  background-position: center;
+		  background-repeat: no-repeat;
+		  position: relative;
+		  border-radius: 15px;
+		  margin-left: 500px;
+		   }
+		.button {
+		  background-color:#006C6C; /* Green */
+		  border: none;
+		  color: white;
+		  padding: 14px 26px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 16px;
+		  margin: 4px 2px;
+		  -webkit-transition-duration: 0.4s; /* Safari */
+		  transition-duration: 0.4s;
+		  cursor: pointer;
+		  border-radius:7px;
+		}
+		.button4 {
+		  background-color:#006C6C;
+		  color: white;
+		  border: 2px solid #e7e7e7;
+		}
+		.button4:hover {
+			background-color:red;
+		}
+		a {
+		   text-decoration:none;
+		}
+</style>
+</head>
+<body style="background-color:#f1f1f1">
+	<div id="header">
+		<h1>CAR RENTAL MANAGEMENT SYSTEM</h1>
+	</div>
+	<br>
+	<div class="hero-image">
+		<center>
+			<div id="mydiv">
+				<form method="post" action="New_borrower">
+						<b>
+						<br>
+      					<h2>New User</h2><br>
+							Full Name : <input type="text" name="name" placeholder=" Full Name"><br><br>
+
+							&nbsp &nbsp Address : <input type="text" name="addr" placeholder=" Address"><br><br>
+
+							Mobile No : <input type="text" name="mob" placeholder=" Mobile Number"><br><br>
+
+							&nbsp &nbsp &nbsp E-Mail : <input type="email" name="email" placeholder=" Email"><br><br>
+
+							Username : <input type="text" name="username" placeholder=" username"><br><br>
+
+							Password : <input type="password" name="password" placeholder=" password" ><br><br>
+						<input class="button button4" type="reset">
+						&nbsp
+						<input class=" button button4" type="submit" name="submit" value="Sumbit">
+						
+					</b>
+					<h3><a class="button button4" style="color: white" href="loginborrower.html">Already a Member ?</a></h3>
+					<br>
+					<br>
+				</form>
+			</div>
+		</center>
+	</div>
+	</div>
+</body>
+</html>

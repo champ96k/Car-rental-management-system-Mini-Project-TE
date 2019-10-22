@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>GetCar</title>
+<style>
+			#header {
+		      background-color:#006C6C;
+		      color:white;
+		      text-align:center;
+		      padding:5px;
+		      margin-top: 1px;
+		      margin-left:1px;
+		      margin-right:1px;
+		      border-radius: 20px;
+		  	}
+			#mydiv {
+	          position:absolute;
+	          top: 50%;
+	          left: 50%;
+	          width:27em;
+	          height:23em;
+	          margin-top: -13em; /*set to a negative number 1/2 of your height*/
+	          margin-left: -50em; /*set to a negative number 1/2 of your width*/
+	          border: 3px solid #ccc;
+	          background-color: #f3f3f3;
+	         /* border-color:blue;*/
+	          border-radius: 15px;
+	          border-right: 5px solid #006C6C;
+	          border-bottom: 5px solid #006C6C;
+	          border-left: 2px solid #006C6C;
+	          border-top: 2px solid #006C6C;
+	      }
+
+	      .hero-image {
+			  background-image: url("pic2.png");
+			  height:450px;
+			  background-repeat: no-repeat;
+			  position: relative;
+			  border-radius: 15px;
+			  margin-left:500px;
+			}	
+			.button {
+			  background-color:#006C6C; /* Green */
+			  border: none;
+			  color: white;
+			  padding: 16px 32px;
+			  text-align: center;
+			  text-decoration: none;
+			  display: inline-block;
+			  font-size: 16px;
+			  margin: 4px 2px;
+			  -webkit-transition-duration: 0.4s; /* Safari */
+			  transition-duration: 0.4s;
+			  cursor: pointer;
+		}
+		.button4 {
+		  background-color:#006C6C;
+		  color: white;
+		  border: 2px solid #e7e7e7;
+		}
+		.button4:hover {
+			background-color:red;
+		}
+</style>
+</head>
+<body>
+          <div id="header">
+            <h1>CAR RENTAL MANAGEMENT SYSTEM</h1>
+          </div>
+          <center>
+          	<h1>BORROW CAR </h1>
+          </center>
+    <div class="hero-image"> 
+    <center>
+      <b>
+      <form method="get" action="Getcar">
+        <div id="mydiv">
+          <br>
+              <h2> Filter By Car Manufacturer Seats </h2>
+          <br>
+          <br>
+              Select Your Car Manufacturer :
+              <select name="cars">
+                <option value="Audi">Audi</option>
+                <option value="BMW">BMW</option>
+                <option value="Bugatti">Bugatti</option>
+                <option value="Chevrolet">Chevrolet</option>
+                <option value="Datsun">Datsun</option>
+                <option value="Ferrari">Ferrari</option>
+                <option value="Fiat">Fiat</option>
+                <option value="Force">Force</option>
+                <option value="Ford">Ford</option>
+                <option value="Honda">Honda</option>
+                <option value="Hummer">Hummer</option>
+                <option value="Hyundai">Hyundai</option>
+                <option value="Isuzu">Isuzu</option>
+                <option value="Jaguar">Jaguar</option>
+                <option value="Jeep">Jeep</option>
+                <option value="Kia">Kia</option>
+                <option value="Lamborghini">Lamborghini</option>
+                <option value="Landrover">Land Rover</option>
+                <option value="Mahindra">Mahindra</option>
+                <option value="MarutiSuzuki">Maruti Suzuki</option>
+                <option value="Mercedes">Mercedes-Benz</option>
+                <option value="MG">MG</option>
+                <option value="Mitsubishi">Mitsubishi</option>
+                <option value="Nissan">Nissan</option>
+                <option value="Porsche">Porsche</option>
+                <option value="Renault">Renault</option>
+                <option value="RollsRoyce">Rolls-Royce</option>
+                <option value="Skoda">Skoda</option>
+                <option value="Suzuki">Suzuki</option>
+                <option value="Tata">Tata</option>
+                <option value="Tesla">Tesla</option>
+                <option value="Toyota">Toyota</option>
+                <option value="Volkswagen">Volkswagen</option>
+                <option value="Volvo">Volvo &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </option> 
+              </select> 
+            <br><br>
+                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Capacity (Seats) : <input type="text" name="seats" placeholder="Seats Capacity">
+        <br>
+        <br>
+        <br>
+          <input class="button button4" type="reset">  &nbsp &nbsp
+          <input class="button button4" type="submit" name="submit" value="GET new Car !">
+          <br>
+          <br>
+        </div>
+      </form>
+    </b>
+    </center>
+  </div>
+</body>
+</html>

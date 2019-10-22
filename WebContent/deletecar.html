@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>DeleteCar</title>
+</head>
+<style>
+      #header {
+          background-color:#006C6C;
+          color:white;
+          text-align:center;
+          padding:5px;
+          margin-top: 1px;
+          margin-left:1px;
+          margin-right:1px;
+          border-radius: 20px;
+        }
+      #mydiv {
+            position:absolute;
+            top: 50%;
+            left: 50%;
+            width:30em;
+            height:16em;
+            margin-top: -5em; /*set to a negative number 1/2 of your height*/
+            margin-left: -56em; /*set to a negative number 1/2 of your width*/
+            border: 3px solid #ccc;
+            background-color: #f3f3f3;
+           /* border-color:blue;*/
+            border-radius: 15px;
+            border-right: 5px solid #006C6C;
+            border-bottom: 5px solid #006C6C;
+            border-left: 2px solid #006C6C;
+            border-top: 2px solid #006C6C;
+        }
+        .hero-image {
+        background-image: url("pic51.svg");
+        height:360px;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        border-radius: 15px;
+        margin-left: 500px;
+      } 
+      .button {
+        background-color:#006C6C; /* Green */
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
+    .button4 {
+      background-color:#006C6C;
+      color: white;
+      border: 2px solid #e7e7e7;
+    }
+    .button4:hover {
+      background-color:red;
+    }
+    a {
+       text-decoration:none;
+    }
+</style>
+<body>
+	<div id="header">
+	<h1>CAR RENTAL MANAGEMENT SYSTEM</h1>
+    </div>
+    <center>
+      <h1>Sort By Car Number To Delete </h1>
+    </center>
+    <br>
+    <br>
+    <div class="hero-image"> 
+  	<center>
+  		<form method="get" action="Deletecar">
+  			<div id="mydiv">
+  				<br>
+  				<br>
+  				<br>
+  				<b>
+  					<h2> Car Number :  <input type="text" name="carno" placeholder=" Enter Car Number"> </h2>
+  				</b>
+  				<br>
+  					<input class="button button4" type="reset"> &nbsp &nbsp &nbsp &nbsp &nbsp
+  					<input class="button button4" type="submit" name="submit" value="DELETE my Car !">
+  				<br>
+  				<br>
+  			</div>
+  		</form>
+  	</center>
+  </div>
+</body>
+</html>

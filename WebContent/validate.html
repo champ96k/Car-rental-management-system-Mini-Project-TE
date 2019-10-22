@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+<title>Validate</title>
+<style>
+	#header {
+      background-color:#006C6C;
+      color:white;
+      text-align:center;
+      padding:5px;
+      margin-top: 1px;
+      margin-left:1px;
+      margin-right:1px;
+      border-radius: 20px;
+  	}
+	#mydiv {
+            position:absolute;
+            top: 50%;
+            left: 50%;
+            width:26em;
+            height:19em;
+            margin-top: -18em; /*set to a negative number 1/2 of your height*/
+            margin-left: -50em; /*set to a negative number 1/2 of your width*/
+            border: 3px solid #ccc;
+            background-color: #f3f3f3;
+           /* border-color:blue;*/
+            border-radius: 15px;
+            border-right: 5px solid #006C6C;
+            border-bottom: 5px solid #006C6C;
+            border-left: 2px solid #006C6C;
+            border-top: 2px solid #006C6C;
+        }
+  		.hero-image {
+			  background-image: url("pic61.png");
+			  height:450px;
+			  background-repeat: no-repeat;
+			  position: relative;
+			  border-radius: 15px;
+			  margin-left:750px;
+			  margin-top:100px;
+			}	
+	.button {
+	  background-color:#006C6C; /* Green */
+	  border: none;
+	  color: white;
+	  padding: 16px 32px;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  font-size: 16px;
+	  margin: 4px 2px;
+	  -webkit-transition-duration: 0.4s; /* Safari */
+	  transition-duration: 0.4s;
+	  cursor: pointer;
+	}
+	.button4 {
+	  background-color:#006C6C;
+	  color: white;
+	  border: 2px solid #e7e7e7;
+	}
+	.button4:hover {
+		background-color:red;
+	}
+	a {
+	   text-decoration:none;
+	}
+</style>
+</head>
+<body>
+	<div id="header">
+		<h1>CAR RENTAL MANAGEMENT SYSTEM</h1>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+<div class="hero-image"> 
+<center>
+	<br>
+	<div id="mydiv">
+		<form method="get" action="Validate">
+			<b>
+				<br>
+				<br>
+				<h1>Please enter Car No. of Lender to validate</h1>
+				<h3>
+					Lender Car No. : 	<input type="text" name="carno"  placeholder=" Car no." ><br><br>
+					<!-- Password : 	<input type="password" name="password"  placeholder=" Password"><br><br> -->
+								<input class="button button4" type="reset">
+								<input class="button button4" type="submit" name="login" value="VALIDATE"><br><br>
+				</h3>
+			</b>
+		</form>
+	</div>
+</center>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+#nav {
+  position: absolute;
+  left: 420px;
+  height: 150px;
+
+    img:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=90); 
+    }
+  }
+#nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+#nav ul li {
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+#nav ul li a {
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+  color: #FFF;
+  text-align: center;
+}
+
+/* Navbar */
+.site-navbar {
+  margin-bottom: 0px;
+  z-index: 1999;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 1rem; }
+  @media (max-width: 991.98px) {
+    .site-navbar {
+      padding-top: 3rem;
+      padding-bottom: 3rem; } }
+  
+
+      .site-navbar .site-navigation .site-menu > li > a {
+        margin-left: 15px;
+        margin-right: 15px;
+        padding: 20px 0px;
+        color: #fff; }
+
+/*
+Homepage Setup
+*/.site-mobile-menu {
+  width: 300px;
+  position: fixed;
+  right: 0;
+  z-index: 2000;
+  padding-top: 20px;
+  background: #fff;
+  height: calc(100vh);
+  -webkit-transform: translateX(110%);
+  -ms-transform: translateX(110%);
+  transform: translateX(110%);
+  -webkit-box-shadow: -10px 0 20px -10px rgba(0, 0, 0, 0.1);
+  box-shadow: -10px 0 20px -10px rgba(0, 0, 0, 0.1);
+  -webkit-transition: .3s all ease-in-out;
+  -o-transition: .3s all ease-in-out;
+  transition: .3s all ease-in-out; }
+  .offcanvas-menu .site-mobile-menu {
+    -webkit-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0%); }
+
+  
+/*
+  HomePage Image
+*/
+ .ftco-cover-1 {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
+  .ftco-cover-1,
+  .ftco-cover-1 
+  .container > 
+  .row {
+    height: 100vh;
+    min-height: 600px; }
+
+/*
+ Main Title Name
+*/    .ftco-cover-1.overlay h1 {
+      color: #fff;
+      font-size: 3rem; }
+    .ftco-cover-1.overlay p {
+      color: #fff; }
+      .ftco-cover-1.overlay p a {
+        color: #fff;
+        text-decoration: underline;
+        font-weight: 700; }
+
+
+
+/* cruise */
+.feature-1 {
+  background: #ccc;
+  position: relative;
+  display: block;
+  z-index: 1;
+  margin-bottom: 30px; }
+  .feature-1 .feature-1-contents {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 30px;
+    background: #fff;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease; }
+    .feature-1 .feature-1-contents h2 {
+      font-size: 1.2rem; }
+  .feature-1:hover .feature-1-contents, .feature-1:focus .feature-1-contents {
+    visibility: visible;
+    opacity: .95; }
+
